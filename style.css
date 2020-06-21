@@ -1,0 +1,85 @@
+/* general styling */
+body {
+  background: rgba(128, 128, 128, 0.192);
+}
+
+ul {
+  list-style: none;
+}
+
+.slate-grey {
+  color: darkslategray;
+}
+
+/* todo item box styling */
+.col-12 {
+  background: white;
+  border-radius: 0.7rem;
+}
+
+/* input bar styles */
+#todo-item {
+  background: rgba(128, 128, 128, 0.082);
+  font-size: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+#todo-data,
+#add-item,
+#todo-list-items button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+#todo-data {
+  width: 75%;
+}
+
+#todo-data::placeholder {
+  color: rgba(128, 128, 128, 0.288);
+}
+
+/* list items styling  */
+#todo-list-items {
+  font-size: 1.5rem;
+}
+#todo-list-items li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+#todo-list-items li input[type="checkbox"] {
+  cursor: pointer;
+}
+#todo-list-items li span {
+  width: 80%;
+}
+#todo-list-items li button {
+  border-radius: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#todo-list-items li .unchecked {
+  background: rgb(0, 132, 255);
+}
+
+#todo-list-items li .remove-button {
+  background: rgba(255, 0, 0, 0.747);
+  visibility: hidden;
+}
+
+/* hoverable trash button styles */
+#todo-list-items li:hover .remove-button {
+  visibility: visible;
+}
+
+#todo-list-items li button i {
+  pointer-events: none;
+}
